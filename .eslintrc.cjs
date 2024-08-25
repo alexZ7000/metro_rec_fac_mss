@@ -26,14 +26,9 @@ module.exports = {
             files: ["./**/*.js", "./**/*.ts", "./**/*.tsx", "tests/**/*"]
         }
     ],
-    ignorePatterns: [
-        "dist",
-        ".eslintrc.cjs",
-        "iac/",
-        ".github/"
-    ],
+    ignorePatterns: ["dist", ".eslintrc.cjs", "iac/", ".github/"],
     parser: "@typescript-eslint/parser",
     rules: {
-        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-explicit-any": "warn"
     }
 };

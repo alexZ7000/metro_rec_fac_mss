@@ -23,9 +23,9 @@ jobs:
 
             - name: Install iac dependencies
               run: |
-                cd iac
-                npm ci
-                cd ..
+                  cd iac
+                  npm ci
+                  cd ..
 
             - name: Install dependencies
               run: npm ci

@@ -17,17 +17,18 @@ const config = {
     // Automatically clear mock calls, instances, contexts and results before every test
     clearMocks: true,
     moduleNameMapper: {
-        '^@entities/(.*)$': '<rootDir>/src/core/structure/entities/$1',
-        '^@mocks/(.*)$': '<rootDir>/src/core/structure/mocks/$1',
-        '^@coreRepositories/(.*)$': '<rootDir>/src/core/repositories/$1',
-        '^@database/(.*)$': '<rootDir>/src/core/repositories/database/$1',
-        '^@dtos/(.*)$': '<rootDir>/src/core/repositories/database/dtos/$1',
-        '^@models/(.*)$': '<rootDir>/src/core/repositories/database/models/$1',
-        '^@databaseRepositories/(.*)$': '<rootDir>/src/core/repositories/database/repositories/$1',
-        '^@interfaces/(.*)$': '<rootDir>/src/core/repositories/interfaces/$1',
-        '^@repositoryMocks/(.*)$': '<rootDir>/src/core/repositories/mocks/$1',
-        '^@errors/(.*)$': '<rootDir>/src/core/helpers/errors/$1',
-        '^@functions/(.*)$': '<rootDir>/src/core/helpers/functions/$1',
+        "^@entities/(.*)$": "<rootDir>/src/core/structure/entities/$1",
+        "^@mocks/(.*)$": "<rootDir>/src/core/structure/mocks/$1",
+        "^@coreRepositories/(.*)$": "<rootDir>/src/core/repositories/$1",
+        "^@database/(.*)$": "<rootDir>/src/core/repositories/database/$1",
+        "^@dtos/(.*)$": "<rootDir>/src/core/repositories/database/dtos/$1",
+        "^@models/(.*)$": "<rootDir>/src/core/repositories/database/models/$1",
+        "^@databaseRepositories/(.*)$":
+            "<rootDir>/src/core/repositories/database/repositories/$1",
+        "^@interfaces/(.*)$": "<rootDir>/src/core/repositories/interfaces/$1",
+        "^@repositoryMocks/(.*)$": "<rootDir>/src/core/repositories/mocks/$1",
+        "^@errors/(.*)$": "<rootDir>/src/core/helpers/errors/$1",
+        "^@functions/(.*)$": "<rootDir>/src/core/helpers/functions/$1"
     },
 
     // Indicates whether the coverage information should be collected while executing the test
@@ -190,7 +191,7 @@ const config = {
     transform: {
         "^.+\\.(ts|tsx)$": "ts-jest",
         "^.+\\.(js|jsx)$": "babel-jest"
-    },
+    }
 
     // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
     // transformIgnorePatterns: [
